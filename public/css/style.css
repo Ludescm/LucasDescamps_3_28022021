@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.article {
+  border: 2px solid black;
+}
+.article__Head {
+  border: 1px solid red;
+}
+.article__Bloc {
+  border: 1px solid red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 2%;
+}
+
+.article__Container {
+  border: 1px solid blue;
+  width: 45%;
+  margin: 2%;
+  border-radius: 2rem;
+}
+
+@media (max-width: 768px) {
+  .article {
+    border: 2px solid black;
+  }
+  .article__Head {
+    border: 1px solid red;
+  }
+  .article__Bloc {
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    margin: 2%;
+  }
+
+  .article__Container {
+    border: 1px solid blue;
+    width: 90%;
+    margin: 2%;
+    border-radius: 2rem;
+  }
+}
+.article__Image {
+  width: 100%;
+}
+.article__Image--Img {
+  border: 1px solid green;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .article__Image {
+    width: 100%;
+  }
+  .article__Image--Img {
+    border: 1px solid green;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+  }
+}
+@media (max-width: 380px) {
+  .article__Image {
+    width: 100%;
+  }
+  .article__Image--Img {
+    border: 1px solid green;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+  }
+}
+/*Logo + Titre*/
+/*Text*/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+{
+  "name": "lucasdescamps_3_28_022021",
+  "version": "1.0.0",
+  "description": "LucasDescamps_3_28_022021",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ludescm/LucasDescamps_3_28_022021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ludescm/LucasDescamps_3_28_022021/issues"
+  },
+  "homepage": "https://github.com/Ludescm/LucasDescamps_3_28_022021#readme"
+}
