@@ -182,6 +182,37 @@
     justify-content: center;
   }
 }
+.navigation {
+  border: 1px solid red;
+  font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+.navigation__Bloc {
+  border: 1px solid green;
+  display: flex;
+  justify-content: center;
+}
+.navigation__Bloc--Title {
+  border: 1px solid blue;
+  font-size: 2rem;
+  width: 35%;
+  text-align: center;
+}
+.navigation__Bloc--Text {
+  border: 1px solid blue;
+  font-size: 1.5rem;
+  width: 45%;
+  text-align: center;
+}
+.navigation__Bloc--Button {
+  border: 1px solid blue;
+  font-size: 2rem;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 3rem;
+}
+
 /*Logo + Titre*/
 /*Text*/
 body {
@@ -201,6 +232,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: inset 0 0 6px #969696;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: whitesmoke;
