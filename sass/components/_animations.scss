@@ -1,0 +1,15 @@
+@keyframes roll{
+    0% {
+        transform: scaleY(0);
+        transform-origin: top;
+      }
+    25%{
+        transform: scaleY(0.25);
+    }
+    75%{
+        transform: scaleY(0.75);
+    }  
+    100% {
+        transform: scaleY(1);
+      }
+}

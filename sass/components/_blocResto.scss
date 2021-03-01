@@ -1,5 +1,14 @@
 .article{
+    background-color: whitesmoke;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: -1.2rem;
     &__Head{
+        &--Title{
+            font-size: 2rem;
+            font-family: "Roboto", sans-serif;
+            margin-left: 2%;
+        }
     }
     &__Bloc{
         display: flex;
@@ -19,6 +28,11 @@
 @media (max-width: 768px){
     .article{
         &__Head{
+            &--Title{
+                font-size: 1.5rem;
+                font-family: "Roboto", sans-serif;
+                margin-left: 2%;
+            }
         }
         &__Bloc{
             display: flex;
