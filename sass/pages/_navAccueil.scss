@@ -35,8 +35,9 @@
 @media screen and (max-device-width: 480px){
     .navigation__Bloc{
         &--Title{
-            font-size: 0.9rem;
+            font-size: 1rem;
             width: 45%;
+            margin-bottom: -1%;
         }
         &--Text{
             font-size: 0.6rem;
