@@ -1,10 +1,7 @@
 .article{
-    border: 2px solid black;
     &__Head{
-        border: 1px solid red;
     }
     &__Bloc{
-        border: 1px solid red;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -13,20 +10,17 @@
 }
 
 .article__Container{
-    border: 1px solid blue;
     width: 45%;
     margin: 2%;
-    border-radius: 2rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
 }
 
 @media (max-width: 768px){
     .article{
-        border: 2px solid black;
         &__Head{
-            border: 1px solid red;
         }
         &__Bloc{
-            border: 1px solid red;
             display: flex;
             flex-flow: column wrap;
             justify-content: space-around;
@@ -36,9 +30,9 @@
     }
     
     .article__Container{
-        border: 1px solid blue;
         width: 90%;
         margin: 2%;
-        border-radius: 2rem;
+        border-radius: 20px;
+        margin-bottom: 5%;
     }
 }

@@ -1,0 +1,74 @@
+.footer{
+    background-color: rgb(30, 30, 30);
+    padding: 10px;
+    &__Article{
+        &--Title{
+            font-size: 2rem;
+            font-family: "Shrikhand";
+            color: white;
+            margin-left: 1%;
+        }
+    }
+}
+
+.footer{
+    &__Descrip{
+        &--Icon{
+            color: white;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+        &--Text{
+            color: white;
+            margin-left: 1%;
+            text-decoration: none;
+            transform: scale(1);
+            transition: 400ms;
+            &:hover{
+                text-decoration: underline;
+                transform: scale(1.05);
+            }
+        }
+        &--Link{
+            color: white;
+            margin-left: 1%;
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .footer{
+        background-color: rgb(30, 30, 30);
+        &__Article{
+            &--Title{
+                font-size: 1.5rem;
+                font-family: "Shrikhand";
+                color: white;
+                margin-left: 1%;
+            }
+        }
+    }
+    
+    .footer{
+        &__Descrip{
+            &--Icon{
+                font-size: 0.9rem;
+                color: white;
+                margin-left: 2%;
+                text-decoration: none;
+            }
+            &--Text{
+                color: white;
+                font-size: 0.9rem;
+                margin-left: 2%;
+                text-decoration: none;
+            }
+            &--Link{
+                color: white;
+                margin-left: 2%;
+                text-decoration: none;
+            }
+        }
+    }
+}
