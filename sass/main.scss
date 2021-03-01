@@ -1,11 +1,15 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./components/blocResto";
 @import "./components/animations";
 @import "./components/heartAccueil";
 @import "./components/menus";
+@import "./layouts/headerMenus";
+@import "./layouts/menuList";
 @import "./layouts/fonctionnement";
 @import "./layouts/footer";
 @import "./pages/imgSize";
+@import "./pages/menus";
 @import "./pages/navAccueil";
 @import "./themes/principal";
 @import "./themes/headerMenus";

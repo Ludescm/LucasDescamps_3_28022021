@@ -1,0 +1,196 @@
+.articlePagesContent{
+    display: flex;
+    flex-flow: column;
+    padding-top: 5%;
+    animation: roll 2s;
+    &__Head{
+        margin-left: 5%;
+        &--Titre{
+            font-family: "Roboto";
+            border-bottom: 5px solid $tertiary-color;
+            width: 5%;
+        }
+    }
+}
+@media screen and (max-device-width480px){
+    .articlePagesContent{
+        border: 1px solid red;
+        display: flex;
+        flex-flow: column;
+        padding-top: 5%;
+        &__Head{
+            border: 1px solid green;
+            margin-left: 5%;
+            &--Titre{
+                border: 1px solid blue;
+                font-family: "Roboto";
+            }
+        }
+    }
+}
+
+
+.articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
+    box-shadow: 0 0 10px rgb(150, 150, 150);
+    margin-left: 20%;
+    margin-right: 0;
+    width: 60%;
+    height: 7rem;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    &:hover .articlePagesContent__Entree--Details{
+        transform: scale(1);
+    }
+    &:hover .articlePagesContent__Entree--Coche{
+        transform: scale(1);
+    }
+    &:hover .articlePagesContent__Plats--Details{
+        transform: scale(1);
+    }
+    &:hover .articlePagesContent__Plats--Coche{
+        transform: scale(1);
+    }
+    &:hover .articlePagesContent__Desserts--Details{
+        transform: scale(1);
+    }
+    &:hover .articlePagesContent__Desserts--Coche{
+        transform: scale(1);
+    }
+    &--Details{
+        width: 85%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        font-family: "Roboto";
+        display: flex;
+        flex-flow: row wrap;
+        transform-origin: left;
+        transform: scale(1.15);
+        transition: transform 600ms;
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    &--Title{
+        width: 70%;
+        margin-bottom: -4%;
+    }
+    &--Text{
+        width: 70%;
+    }
+    &--Price{
+        width: 25%;
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-device-width480px){
+    .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
+        border: 2px solid yellow;
+        box-shadow: 2px 5px 5px rgb(150, 150, 150);
+        margin-left: 20%;
+        margin-right: 0;
+        width: 60%;
+        height: 7rem;
+        margin-bottom: 5%;
+        border-radius: 2rem;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        &--Details{
+            border: 1px solid green;
+            width: 85%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            padding-left: 5%;
+            font-family: "Roboto";
+            display: flex;
+            flex-flow: row wrap;
+        }
+        &--Title{
+            border: 1px solid blue;
+            width: 70%;
+            margin-bottom: -5%;
+        }
+        &--Text{
+            border: 1px solid blue;
+            width: 70%;
+        }
+        &--Price{
+            border: 1px solid blue;
+            width: 25%;
+            font-weight: bold;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+.articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
+    &--Coche{
+        width: 15%;
+        position: relative;
+        background-color: $tertiary-color;
+        padding-right: 3rem;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: center right;
+        transform: scale(0);
+        transition: transform 600ms;
+        &:hover{
+            transform: scale(1);
+        }
+    }
+    &--Wrap{
+        color: white;
+        margin-left: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        transform: rotate(2turn);
+        transform-origin: center;
+        transition-duration: 2s;
+    }
+    &:hover &--Wrap{
+        transform: rotate(0);
+    }
+}
+@media screen and (max-device-width480px){
+    .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
+        &--Coche{
+            border: 1px solid green;
+            background-color: $tertiary-color;
+            padding-right: 3rem;
+            border-top-right-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--Wrap{
+            border: 1px solid blue;
+            margin-left: 3rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+        }
+        &--Icon{
+            border: 1px solid blue;
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.articlePagesContent__Titre{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    &--Title{
+        font-size: 2.5rem;
+        font-family: "Roboto", sans-serif;
+    }
+}
+@media screen and (max-device-width:480px){
+    .articlePagesContent__Titre{
+        position: relative;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        &--Title{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.article__IconMenu{
+    display: flex;
+    align-items: center;
+    font-size: 3rem;
+    &--true{
+        color: $primary-color;
+    }
+    &--false{
+        color: $primary-color;
+    }
+}
+@media screen and (max-device-width:480px){
+    .article__IconMenu{
+        font-size: 1.5rem;
+    }
+}

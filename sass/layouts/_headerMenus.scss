@@ -1,0 +1,38 @@
+.headerPages{
+    display: flex;
+    align-items: center;
+    &__Icon{
+        width: 25%;
+        margin-left: 5%;
+        &--Img{
+            color: black;
+            font-size: 3rem;
+        }
+    }
+    &__Logo{
+        width: 30%;
+        margin-left: 5%;
+        &--Title{
+            display: flex;
+            justify-content: center;
+            font-family: "Shrikhand";
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-device-width:480px){
+    .headerPages{
+        &__Icon{
+            &--Img{
+                font-size: 1.5rem;
+            }
+        }
+        &__Logo{
+            width: 30%;
+            &--Title{
+                font-size: 2rem;
+            }
+        }
+    }
+}

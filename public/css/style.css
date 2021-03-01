@@ -51,12 +51,6 @@
     transform: scaleY(0);
     transform-origin: top;
   }
-  25% {
-    transform: scaleY(0.25);
-  }
-  75% {
-    transform: scaleY(0.75);
-  }
   100% {
     transform: scaleY(1);
   }
@@ -179,6 +173,230 @@
     font-size: 0.6rem;
     width: 55%;
     margin-left: 15px;
+  }
+}
+.headerPages {
+  display: flex;
+  align-items: center;
+}
+.headerPages__Icon {
+  width: 25%;
+  margin-left: 5%;
+}
+.headerPages__Icon--Img {
+  color: black;
+  font-size: 3rem;
+}
+.headerPages__Logo {
+  width: 30%;
+  margin-left: 5%;
+}
+.headerPages__Logo--Title {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand";
+  font-size: 3rem;
+}
+
+@media screen and (max-device-width: 480px) {
+  .headerPages__Icon--Img {
+    font-size: 1.5rem;
+  }
+  .headerPages__Logo {
+    width: 30%;
+  }
+  .headerPages__Logo--Title {
+    font-size: 2rem;
+  }
+}
+.articlePagesContent {
+  display: flex;
+  flex-flow: column;
+  padding-top: 5%;
+  animation: roll 2s;
+}
+.articlePagesContent__Head {
+  margin-left: 5%;
+}
+.articlePagesContent__Head--Titre {
+  font-family: "Roboto";
+  border-bottom: 5px solid #99E2D0;
+  width: 5%;
+}
+
+@media screen and (max-device-width480px) {
+  .articlePagesContent {
+    border: 1px solid red;
+    display: flex;
+    flex-flow: column;
+    padding-top: 5%;
+  }
+  .articlePagesContent__Head {
+    border: 1px solid green;
+    margin-left: 5%;
+  }
+  .articlePagesContent__Head--Titre {
+    border: 1px solid blue;
+    font-family: "Roboto";
+  }
+}
+.articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
+  box-shadow: 0 0 10px #969696;
+  margin-left: 20%;
+  margin-right: 0;
+  width: 60%;
+  height: 7rem;
+  margin-bottom: 5%;
+  border-radius: 2rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Entree--Details, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Details {
+  transform: scale(1);
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Entree--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Coche {
+  transform: scale(1);
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Plats--Details, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Details {
+  transform: scale(1);
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Plats--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Coche {
+  transform: scale(1);
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Desserts--Details, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Details {
+  transform: scale(1);
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Desserts--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Coche {
+  transform: scale(1);
+}
+.articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
+  width: 85%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  font-family: "Roboto";
+  display: flex;
+  flex-flow: row wrap;
+  transform-origin: left;
+  transform: scale(1.15);
+  transition: transform 600ms;
+}
+.articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
+  transform: scale(1);
+}
+.articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
+  width: 70%;
+  margin-bottom: -4%;
+}
+.articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
+  width: 70%;
+}
+.articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
+  width: 25%;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-device-width480px) {
+  .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
+    border: 2px solid yellow;
+    box-shadow: 2px 5px 5px #969696;
+    margin-left: 20%;
+    margin-right: 0;
+    width: 60%;
+    height: 7rem;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
+    border: 1px solid green;
+    width: 85%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 5%;
+    font-family: "Roboto";
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
+    border: 1px solid blue;
+    width: 70%;
+    margin-bottom: -5%;
+  }
+  .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
+    border: 1px solid blue;
+    width: 70%;
+  }
+  .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
+    border: 1px solid blue;
+    width: 25%;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+.articlePagesContent__Entree--Coche, .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts--Coche {
+  width: 15%;
+  position: relative;
+  background-color: #99E2D0;
+  padding-right: 3rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center right;
+  transform: scale(0);
+  transition: transform 600ms;
+}
+.articlePagesContent__Entree--Coche:hover, .articlePagesContent__Plats--Coche:hover, .articlePagesContent__Desserts--Coche:hover {
+  transform: scale(1);
+}
+.articlePagesContent__Entree--Wrap, .articlePagesContent__Plats--Wrap, .articlePagesContent__Desserts--Wrap {
+  color: white;
+  margin-left: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transform: rotate(2turn);
+  transform-origin: center;
+  transition-duration: 2s;
+}
+.articlePagesContent__Entree:hover .articlePagesContent__Entree--Wrap, .articlePagesContent__Entree:hover .articlePagesContent__Plats--Wrap, .articlePagesContent__Entree:hover .articlePagesContent__Desserts--Wrap, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Wrap, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Wrap, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Wrap, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Wrap, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Wrap, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Wrap {
+  transform: rotate(0);
+}
+
+@media screen and (max-device-width480px) {
+  .articlePagesContent__Entree--Coche, .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts--Coche {
+    border: 1px solid green;
+    background-color: #99E2D0;
+    padding-right: 3rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .articlePagesContent__Entree--Wrap, .articlePagesContent__Plats--Wrap, .articlePagesContent__Desserts--Wrap {
+    border: 1px solid blue;
+    margin-left: 3rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  .articlePagesContent__Entree--Icon, .articlePagesContent__Plats--Icon, .articlePagesContent__Desserts--Icon {
+    border: 1px solid blue;
+    color: white;
+    display: flex;
+    justify-content: center;
   }
 }
 .aside {
@@ -365,6 +583,77 @@
     position: absolute;
     display: flex;
     justify-content: center;
+  }
+}
+.articlePages__Images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.articlePages__Images--Img {
+  border-radius: 10rem;
+  box-shadow: 2px 2px 5px #969696;
+  width: 90%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+@media screen and (max-device-width: 480px) {
+  .articlePages__Images {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -8%;
+  }
+  .articlePages__Images--Img {
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+}
+.articlePagesContent__Titre {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.articlePagesContent__Titre--Title {
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-device-width: 480px) {
+  .articlePagesContent__Titre {
+    position: relative;
+    padding: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  .articlePagesContent__Titre--Title {
+    font-size: 1.5rem;
+  }
+}
+.article__IconMenu {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.article__IconMenu--true {
+  color: #9356DC;
+}
+.article__IconMenu--false {
+  color: #9356DC;
+}
+
+@media screen and (max-device-width: 480px) {
+  .article__IconMenu {
+    font-size: 1.5rem;
   }
 }
 .navigation {

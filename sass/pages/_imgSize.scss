@@ -47,3 +47,36 @@
         }
     }
 }
+
+
+.articlePages{
+    &__Images{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        &--Img{
+            border-radius: 10rem;
+            box-shadow: 2px 2px 5px rgb(150, 150, 150);
+            width: 90%;
+            height: 12rem;
+            object-fit: cover;
+        }
+    }
+}
+@media screen and (max-device-width: 480px){
+    .articlePages{
+        &__Images{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin-bottom: -8%;
+            &--Img{
+                border-radius: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 12rem;
+                object-fit: cover;
+            }
+        }
+    }
+}
