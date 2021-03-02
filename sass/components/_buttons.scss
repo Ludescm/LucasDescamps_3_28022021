@@ -1,0 +1,91 @@
+.navigation__Bloc{
+    &--Button{
+        border: none;
+        font-family: "Roboto", sans-serif;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+        font-size: 1.5rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding: 2% 4%;
+        border-radius: 3rem;
+        color: white;
+        background: linear-gradient($primary-color, $secondary-color);
+        transform: scale(1);
+        transition: transform 600ms;
+        &:hover{
+            transform: scale(1.15);
+            background: linear-gradient($secondary-color, $primary-color);
+        }
+    }
+}
+
+@media screen and (max-device-width: 768px){
+    .navigation__Bloc{
+        &--Button{
+            font-size: 1.5rem;
+            background: linear-gradient($primary-color, $secondary-color);
+            transform: scale(1);
+            transition: transform 600ms;
+            &:hover{
+                transform: scale(1.15);
+                background: linear-gradient($secondary-color, $primary-color);
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .navigation__Bloc{
+        &--Button{
+            font-size: 1rem;
+        }
+    }
+}
+
+.articlePagesContent__Button{
+    display: flex;
+    justify-content: center;
+    &--Btn{
+        font-family: "Roboto", sans-serif;
+        border: none;
+        cursor: pointer;
+        box-shadow: 2px 2px 5px rgb(150, 150, 150);
+        font-size: 2rem;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        padding: 2% 4%;
+        border-radius: 3rem;
+        color: white;
+        background: linear-gradient($primary-color, $secondary-color);
+        transform: scale(1);
+        transition: transform 600ms;
+        &:hover{
+            transform: scale(1.15);
+            background: linear-gradient($secondary-color, $primary-color);
+        }
+    }
+}
+
+@media screen and (max-device-width: 768px){
+    .articlePagesContent__Button{
+        &--Btn{
+            font-size: 1.5rem;
+            background: linear-gradient($primary-color, $secondary-color);
+            transform: scale(1);
+            transition: transform 600ms;
+            &:hover{
+                transform: scale(1.15);
+                background: linear-gradient($secondary-color, $primary-color);
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 480px){
+    .articlePagesContent__Button{
+        &--Btn{
+            font-size:1rem;
+        }
+    }
+}

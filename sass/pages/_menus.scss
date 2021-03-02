@@ -1,23 +1,48 @@
 .articlePagesContent__Titre{
-    padding: 5%;
+    padding: 1%;
+    width: 90%;
+    padding-left: 2%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: whitesmoke;
+    border-radius: 2rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    border: 2px solid whitesmoke;
+    box-shadow: 2px 2px 5px rgb(150, 150, 150);
+    height: 5rem;
     &--Title{
-        font-size: 2.5rem;
-        font-family: "Roboto", sans-serif;
+        font-size: 3rem;
+        font-family: "Shrikhand";
     }
 }
 @media screen and (max-device-width:768px){
     .articlePagesContent__Titre{
         position: relative;
+        padding: 1%;
+        margin-left: 0%;
+        box-shadow: none;
         padding: 0;
         padding-left: 5%;
         padding-right: 5%;
         background-color: whitesmoke;
-        display: flex;
-        justify-content: space-between;
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
+        &--Title{
+            font-size: 2rem;
+        }
+    }
+}
+@media screen and (max-device-width: 480px){
+    .articlePagesContent__Titre{
+        position: relative;
+        padding: 1%;
+        margin-left: 0%;
+        box-shadow: none;
+        padding: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: whitesmoke;
         &--Title{
             font-size: 1.5rem;
         }
@@ -28,15 +53,60 @@
     display: flex;
     align-items: center;
     font-size: 3rem;
-    &--true{
+    & .far {
+        font-size: 2.5rem;
+        margin-bottom: 10%;
         color: $primary-color;
     }
-    &--false{
+    & .fas{
+        font-size: 2.5rem;
+        margin-bottom: 10%;
         color: $primary-color;
+    }
+    & .far + .fas {
+        position: relative;
+        left: -2.5rem;
+        transform: scale(0);
+        cursor: pointer;
+        transform-origin: center;
+        
+    }
+    &:hover .far{
+        transform: scale(1);
+        transition: transform 400ms;
+        transform-origin: center;
+    }
+
+    &:hover .far + .fas {
+        transform: scale(1);
+        transition: transform 400ms;
+        transform-origin: center;
     }
 }
 @media screen and (max-device-width:768px){
     .article__IconMenu{
-        font-size: 1.5rem;
+        & .far {
+            font-size: 2rem;
+        }
+        & .fas{
+            font-size: 2rem;
+        }
+        & .far + .fas {
+            left: -2rem;
+        }
+    }
+}
+@media screen and (max-device-width: 480px){
+    .article__IconMenu{
+        & .far {
+            font-size: 1.5rem;
+        }
+        & .fas{
+            font-size: 1.5rem;
+        }
+        & .far + .fas {
+            left: -1.5rem;
+            
+        }
     }
 }
