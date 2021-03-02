@@ -27,7 +27,7 @@
 
 @media (max-width: 768px) {
   .article__Head--Title {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-family: "Roboto", sans-serif;
     margin-left: 2%;
   }
@@ -44,6 +44,11 @@
     margin: 2%;
     border-radius: 20px;
     margin-bottom: 5%;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .article__Head--Title {
+    font-size: 1.2rem;
   }
 }
 @keyframes roll {
@@ -89,6 +94,40 @@
 }
 
 @media screen and (max-device-width: 768px) {
+  .article__Icon {
+    display: flex;
+    margin-top: -10px;
+    cursor: pointer;
+  }
+  .article__Icon .far {
+    font-size: 2rem;
+    margin-bottom: 10%;
+    color: #9356DC;
+  }
+  .article__Icon .fas {
+    font-size: 2rem;
+    margin-bottom: 10%;
+    color: #9356DC;
+  }
+  .article__Icon .far + .fas {
+    position: relative;
+    left: -2rem;
+    transform: scale(0);
+    cursor: pointer;
+    transform-origin: center;
+  }
+  .article__Icon:hover .far {
+    transform: scale(1);
+    transition: transform 400ms;
+    transform-origin: center;
+  }
+  .article__Icon:hover .far + .fas {
+    transform: scale(1);
+    transition: transform 400ms;
+    transform-origin: center;
+  }
+}
+@media screen and (max-device-width: 480px) {
   .article__Icon {
     display: flex;
     margin-top: -10px;
@@ -163,16 +202,27 @@
   }
   .article__Ecrit--Title {
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 1.3rem;
     width: 55%;
     margin-bottom: -5px;
     margin-left: 15px;
   }
   .article__Ecrit--Text {
     text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 1rem;
     width: 55%;
     margin-left: 15px;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .article__Ecrit {
+    display: flex;
+  }
+  .article__Ecrit--Title {
+    font-size: 1rem;
+  }
+  .article__Ecrit--Text {
+    font-size: 0.8rem;
   }
 }
 .headerPages {
@@ -411,7 +461,12 @@
 
 @media screen and (max-width: 768px) {
   .aside__Title--Text {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .aside__Title--Text {
+    font-size: 1.2rem;
   }
 }
 .aside__Fonct {
@@ -427,7 +482,12 @@
   animation: roll 0.6s;
 }
 
+.aside__Steps--Step:hover .aside__Steps--Icon {
+  color: #9356DC;
+}
+
 .aside__Steps--Step {
+  cursor: pointer;
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -456,9 +516,6 @@
   font-size: 1.5rem;
   margin-right: 1rem;
   color: #969696;
-}
-.aside__Steps--Icon:hover {
-  color: #9356DC;
 }
 .aside__Steps--Text {
   font-size: 1.5rem;
@@ -567,7 +624,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;
-    height: 7rem;
+    height: 10rem;
     object-fit: cover;
   }
   .article__Image--Nvx {
@@ -580,6 +637,11 @@
     position: absolute;
     display: flex;
     justify-content: center;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .article__Image--Img {
+    height: 8rem;
   }
 }
 .articlePages__Images {
@@ -606,7 +668,7 @@
     border-radius: 0;
     box-shadow: none;
     width: 100%;
-    height: 8rem;
+    height: 7rem;
     object-fit: cover;
   }
 }
@@ -771,6 +833,24 @@ body {
   }
   .header__Lieu--Text {
     font-size: 1rem;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .header__Logo--Title {
+    font-size: 2.5rem;
+  }
+  .header__Lieu {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .header__Lieu--Icon {
+    font-size: 0.8rem;
+    margin-left: 5%;
+  }
+  .header__Lieu--Text {
+    font-size: 0.8rem;
   }
 }
 
