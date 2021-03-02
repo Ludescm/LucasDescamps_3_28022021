@@ -479,7 +479,7 @@
   padding: 0;
   list-style: none;
   counter-reset: compteListe;
-  animation: roll 0.6s;
+  animation: roll 1.5s;
 }
 
 .aside__Steps--Step:hover .aside__Steps--Icon {
