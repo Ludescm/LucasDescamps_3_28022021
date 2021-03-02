@@ -29,11 +29,11 @@
     }
 }
 
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 768px){
     .header{
         &__Logo{
             &--Title{
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
         }
         &__Lieu{
@@ -43,11 +43,11 @@
             padding-bottom: 1rem;
             
             &--Icon{
-                font-size: 0.8rem;
+                font-size: 1rem;
                 margin-left: 5%;
             }
             &--Text{
-                font-size: 0.8rem;
+                font-size: 1rem;
             }
         }
     }

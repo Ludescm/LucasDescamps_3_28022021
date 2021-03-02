@@ -88,7 +88,7 @@
   transform-origin: center;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .article__Icon {
     display: flex;
     margin-top: -10px;
@@ -148,7 +148,7 @@
   margin-left: 20px;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .article__Ecrit {
     display: flex;
   }
@@ -198,7 +198,7 @@
   font-size: 3rem;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .headerPages__Icon--Img {
     font-size: 1.5rem;
   }
@@ -219,32 +219,28 @@
   margin-left: 5%;
 }
 .articlePagesContent__Head--Titre {
-  font-family: "Roboto";
   border-bottom: 5px solid #99E2D0;
   width: 5%;
+  font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-device-width480px) {
+@media screen and (max-device-width: 768px) {
   .articlePagesContent {
-    border: 1px solid red;
-    display: flex;
-    flex-flow: column;
-    padding-top: 5%;
+    background-color: whitesmoke;
   }
   .articlePagesContent__Head {
-    border: 1px solid green;
     margin-left: 5%;
   }
   .articlePagesContent__Head--Titre {
-    border: 1px solid blue;
-    font-family: "Roboto";
+    font-size: 1rem;
+    width: 10%;
   }
 }
 .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
   box-shadow: 0 0 10px #969696;
   margin-left: 20%;
   margin-right: 0;
-  width: 60%;
+  width: 70%;
   height: 7rem;
   margin-bottom: 5%;
   border-radius: 2rem;
@@ -271,77 +267,94 @@
   transform: scale(1);
 }
 .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
-  width: 85%;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-left: 5%;
+  width: 95%;
+  margin-left: 2%;
   font-family: "Roboto";
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
   transform-origin: left;
-  transform: scale(1.15);
+  transform: scaleX(1.15);
   transition: transform 600ms;
 }
 .articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
-  transform: scale(1);
+  transform: scaleX(1);
 }
 .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
   width: 70%;
-  margin-bottom: -4%;
+  margin-bottom: -2%;
 }
 .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
   width: 70%;
+  font-size: 0.9rem;
 }
 .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
-  width: 25%;
+  width: 30%;
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
 }
 
-@media screen and (max-device-width480px) {
+@media screen and (max-device-width: 768px) {
   .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
-    border: 2px solid yellow;
-    box-shadow: 2px 5px 5px #969696;
-    margin-left: 20%;
+    margin-left: 2%;
     margin-right: 0;
-    width: 60%;
-    height: 7rem;
-    margin-bottom: 5%;
-    border-radius: 2rem;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+    width: 90%;
+    height: 5rem;
+    border-radius: 1rem;
   }
   .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
-    border: 1px solid green;
-    width: 85%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 5%;
-    font-family: "Roboto";
-    display: flex;
-    flex-flow: row wrap;
+    width: 100%;
+    transform: scaleX(1.2);
+    transition: transform 600ms;
+  }
+  .articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
+    transform: scaleX(1);
   }
   .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
-    border: 1px solid blue;
-    width: 70%;
-    margin-bottom: -5%;
+    margin-bottom: -1%;
+    font-size: 1.1rem;
+    width: 100%;
   }
   .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
-    border: 1px solid blue;
-    width: 70%;
+    font-size: 0.7rem;
   }
   .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
-    border: 1px solid blue;
-    width: 25%;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
+    margin-left: 2%;
+    margin-right: 0;
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+  }
+  .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
+    width: 100%;
+    transform: scaleX(1.26);
+    transition: transform 600ms;
+  }
+  .articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
+    transform: scaleX(1);
+  }
+  .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
+    font-size: 0.7rem;
+    width: 90%;
+  }
+  .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
+    font-size: 0.5rem;
+    width: 80%;
+    margin-top: 2%;
+  }
+  .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
+    font-size: 0.6rem;
+    width: 20%;
   }
 }
 .articlePagesContent__Entree--Coche, .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts--Coche {
-  width: 15%;
+  width: 10%;
   position: relative;
   background-color: #99E2D0;
   padding-right: 3rem;
@@ -351,11 +364,11 @@
   align-items: center;
   justify-content: center;
   transform-origin: center right;
-  transform: scale(0);
+  transform: scaleX(0);
   transition: transform 600ms;
 }
 .articlePagesContent__Entree--Coche:hover, .articlePagesContent__Plats--Coche:hover, .articlePagesContent__Desserts--Coche:hover {
-  transform: scale(1);
+  transform: scaleX(1);
 }
 .articlePagesContent__Entree--Wrap, .articlePagesContent__Plats--Wrap, .articlePagesContent__Desserts--Wrap {
   color: white;
@@ -372,31 +385,18 @@
   transform: rotate(0);
 }
 
-@media screen and (max-device-width480px) {
+@media screen and (max-device-width: 768px) {
   .articlePagesContent__Entree--Coche, .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts--Coche {
-    border: 1px solid green;
     background-color: #99E2D0;
-    padding-right: 3rem;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   .articlePagesContent__Entree--Wrap, .articlePagesContent__Plats--Wrap, .articlePagesContent__Desserts--Wrap {
-    border: 1px solid blue;
     margin-left: 3rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .articlePagesContent__Entree--Icon, .articlePagesContent__Plats--Icon, .articlePagesContent__Desserts--Icon {
-    border: 1px solid blue;
     color: white;
-    display: flex;
-    justify-content: center;
   }
 }
 .aside {
@@ -409,7 +409,7 @@
   font-size: 2rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .aside__Title--Text {
     font-size: 1.5rem;
   }
@@ -466,7 +466,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .aside__Steps--Icon {
     font-size: 0.8rem;
   }
@@ -494,12 +494,9 @@
   color: white;
   margin-left: 1%;
   text-decoration: none;
-  transform: scale(1);
-  transition: 400ms;
 }
 .footer__Descrip--Text:hover {
   text-decoration: underline;
-  transform: scale(1.05);
 }
 .footer__Descrip--Link {
   color: white;
@@ -507,7 +504,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .footer {
     background-color: #1e1e1e;
   }
@@ -559,7 +556,7 @@
   border-radius: 0.8rem;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .article__Image {
     width: 100%;
     display: flex;
@@ -598,7 +595,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .articlePages__Images {
     display: flex;
     justify-content: center;
@@ -609,7 +606,7 @@
     border-radius: 0;
     box-shadow: none;
     width: 100%;
-    height: 12rem;
+    height: 8rem;
     object-fit: cover;
   }
 }
@@ -623,13 +620,13 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .articlePagesContent__Titre {
     position: relative;
     padding: 0;
     padding-left: 5%;
     padding-right: 5%;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
     border-top-left-radius: 2rem;
@@ -651,7 +648,7 @@
   color: #9356DC;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .article__IconMenu {
     font-size: 1.5rem;
   }
@@ -690,18 +687,18 @@
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .navigation__Bloc--Title {
-    font-size: 1rem;
+    font-size: 1.5rem;
     width: 45%;
     margin-bottom: -1%;
   }
   .navigation__Bloc--Text {
-    font-size: 0.6rem;
+    font-size: 1rem;
     width: 55%;
   }
   .navigation__Bloc--Button {
-    font-size: 0.6rem;
+    font-size: 1rem;
     background: linear-gradient(#9356DC, #FF79DA);
     transform: scale(1);
     transition: transform 600ms;
@@ -709,6 +706,17 @@
   .navigation__Bloc--Button:hover {
     transform: scale(1.15);
     background: linear-gradient(#FF79DA, #9356DC);
+  }
+}
+@media screen and (max-device-width: 480px) {
+  .navigation__Bloc--Title {
+    font-size: 1rem;
+  }
+  .navigation__Bloc--Text {
+    font-size: 0.7rem;
+  }
+  .navigation__Bloc--Button {
+    font-size: 0.7rem;
   }
 }
 /*Logo + Titre*/
@@ -747,9 +755,9 @@ body {
   margin-left: 5%;
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-device-width: 768px) {
   .header__Logo--Title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .header__Lieu {
     display: flex;
@@ -758,11 +766,11 @@ body {
     padding-bottom: 1rem;
   }
   .header__Lieu--Icon {
-    font-size: 0.8rem;
+    font-size: 1rem;
     margin-left: 5%;
   }
   .header__Lieu--Text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 

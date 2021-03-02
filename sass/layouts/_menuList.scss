@@ -6,24 +6,20 @@
     &__Head{
         margin-left: 5%;
         &--Titre{
-            font-family: "Roboto";
             border-bottom: 5px solid $tertiary-color;
             width: 5%;
+            font-family: "Roboto", sans-serif;
         }
     }
 }
-@media screen and (max-device-width480px){
+@media screen and (max-device-width: 768px){
     .articlePagesContent{
-        border: 1px solid red;
-        display: flex;
-        flex-flow: column;
-        padding-top: 5%;
+        background-color: whitesmoke;
         &__Head{
-            border: 1px solid green;
             margin-left: 5%;
             &--Titre{
-                border: 1px solid blue;
-                font-family: "Roboto";
+                font-size: 1rem;
+                width: 10%;
             }
         }
     }
@@ -34,7 +30,7 @@
     box-shadow: 0 0 10px rgb(150, 150, 150);
     margin-left: 20%;
     margin-right: 0;
-    width: 60%;
+    width: 70%;
     height: 7rem;
     margin-bottom: 5%;
     border-radius: 2rem;
@@ -60,73 +56,90 @@
         transform: scale(1);
     }
     &--Details{
-        width: 85%;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-left: 5%;
+        width: 95%;
+        margin-left: 2%;
         font-family: "Roboto";
         display: flex;
         flex-flow: row wrap;
+        align-items: center;
         transform-origin: left;
-        transform: scale(1.15);
+        transform: scaleX(1.15);
         transition: transform 600ms;
         &:hover{
-            transform: scale(1);
+            transform: scaleX(1);
         }
     }
     &--Title{
         width: 70%;
-        margin-bottom: -4%;
+        margin-bottom: -2%;
     }
     &--Text{
         width: 70%;
+        font-size: 0.9rem;
     }
     &--Price{
-        width: 25%;
+        width: 30%;
         font-weight: bold;
         display: flex;
         justify-content: flex-end;
     }
 }
 
-@media screen and (max-device-width480px){
+@media screen and (max-device-width: 768px){
     .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
-        border: 2px solid yellow;
-        box-shadow: 2px 5px 5px rgb(150, 150, 150);
-        margin-left: 20%;
+        margin-left: 2%;
         margin-right: 0;
-        width: 60%;
-        height: 7rem;
-        margin-bottom: 5%;
-        border-radius: 2rem;
-        display: flex;
-        flex-flow: row;
-        justify-content: center;
+        width: 90%;
+        height: 5rem;
+        border-radius: 1rem;
         &--Details{
-            border: 1px solid green;
-            width: 85%;
-            padding-top: 1%;
-            padding-bottom: 1%;
-            padding-left: 5%;
-            font-family: "Roboto";
-            display: flex;
-            flex-flow: row wrap;
+            width: 100%;
+            transform: scaleX(1.2);
+            transition: transform 600ms;
+            &:hover{
+            transform: scaleX(1);
+        }
         }
         &--Title{
-            border: 1px solid blue;
-            width: 70%;
-            margin-bottom: -5%;
+            margin-bottom: -1%;
+            font-size: 1.1rem;
+            width: 100%;
         }
         &--Text{
-            border: 1px solid blue;
-            width: 70%;
+            font-size: 0.7rem;
         }
         &--Price{
-            border: 1px solid blue;
-            width: 25%;
-            font-weight: bold;
-            display: flex;
-            justify-content: flex-end;
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (max-device-width: 480px){
+    .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
+        margin-left: 2%;
+        margin-right: 0;
+        width: 90%;
+        height: 4rem;
+        border-radius: 1rem;
+        &--Details{
+            width: 100%;
+            transform: scaleX(1.26);
+            transition: transform 600ms;
+            &:hover{
+            transform: scaleX(1);
+        }
+        }
+        &--Title{
+            font-size: 0.7rem;
+            width: 90%;
+        }
+        &--Text{
+            font-size: 0.5rem;
+            width: 80%;
+            margin-top: 2%;
+        }
+        &--Price{
+            font-size: 0.6rem;
+            width: 20%;
         }
     }
 }
@@ -134,7 +147,7 @@
 
 .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
     &--Coche{
-        width: 15%;
+        width: 10%;
         position: relative;
         background-color: $tertiary-color;
         padding-right: 3rem;
@@ -144,10 +157,10 @@
         align-items: center;
         justify-content: center;
         transform-origin: center right;
-        transform: scale(0);
+        transform: scaleX(0);
         transition: transform 600ms;
         &:hover{
-            transform: scale(1);
+            transform: scaleX(1);
         }
     }
     &--Wrap{
@@ -165,32 +178,19 @@
         transform: rotate(0);
     }
 }
-@media screen and (max-device-width480px){
+@media screen and (max-device-width: 768px){
     .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts{
         &--Coche{
-            border: 1px solid green;
             background-color: $tertiary-color;
-            padding-right: 3rem;
-            border-top-right-radius: 2rem;
-            border-bottom-right-radius: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-top-right-radius: 1rem;
+            border-bottom-right-radius: 1rem;
         }
         &--Wrap{
-            border: 1px solid blue;
             margin-left: 3rem;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 3rem;
+            font-size: 2rem;
         }
         &--Icon{
-            border: 1px solid blue;
             color: white;
-            display: flex;
-            justify-content: center;
         }
     }
 }

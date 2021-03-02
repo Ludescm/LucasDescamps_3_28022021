@@ -9,7 +9,7 @@
         }
     }
 }
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     .aside{
         &__Title{
             &--Text{
@@ -72,7 +72,7 @@
         font-family: "Roboto", sans-serif;
     }
 }
-@media screen and (max-device-width: 480px){
+@media screen and (max-device-width: 768px){
     .aside__Steps{
         &--Step{
             &::before {
