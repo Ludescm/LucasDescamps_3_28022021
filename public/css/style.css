@@ -985,7 +985,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: inset 0 3px 10px #969696;
+  box-shadow: inset 5px 15px 5px -12px #969696;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: whitesmoke;
