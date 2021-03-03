@@ -46,7 +46,7 @@
     margin-bottom: 5%;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .article__Head--Title {
     font-size: 1.2rem;
   }
@@ -110,7 +110,7 @@
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .navigation__Bloc--Button {
     font-size: 1.5rem;
     background: linear-gradient(#9356DC, #FF79DA);
@@ -122,7 +122,7 @@
     background: linear-gradient(#FF79DA, #9356DC);
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .navigation__Bloc--Button {
     font-size: 1rem;
   }
@@ -151,7 +151,7 @@
   background: linear-gradient(#FF79DA, #9356DC);
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePagesContent__Button--Btn {
     font-size: 1.5rem;
     background: linear-gradient(#9356DC, #FF79DA);
@@ -163,7 +163,7 @@
     background: linear-gradient(#FF79DA, #9356DC);
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .articlePagesContent__Button--Btn {
     font-size: 1rem;
   }
@@ -230,7 +230,7 @@
   transform-origin: center;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .article__Icon {
     display: flex;
     margin-top: -10px;
@@ -264,7 +264,7 @@
     transform-origin: center;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .article__Icon {
     display: flex;
     margin-top: -10px;
@@ -324,7 +324,7 @@
   margin-left: 20px;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .article__Ecrit {
     display: flex;
   }
@@ -351,7 +351,7 @@
     margin-left: 15px;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .article__Ecrit {
     display: flex;
   }
@@ -385,7 +385,7 @@
   font-size: 3rem;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .headerPages__Icon--Img {
     font-size: 1.5rem;
   }
@@ -411,7 +411,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePageContent {
     background-color: whitesmoke;
   }
@@ -492,7 +492,7 @@
   font-size: 1.2rem;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
     margin-left: 5%;
     margin-right: 0;
@@ -520,7 +520,7 @@
     font-size: 0.8rem;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .articlePagesContent__Entree, .articlePagesContent__Plats, .articlePagesContent__Desserts {
     margin-left: 5%;
     margin-right: 0;
@@ -582,7 +582,7 @@
   transform: rotate(0);
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePagesContent__Entree--Coche, .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts--Coche {
     background-color: #99E2D0;
     border-top-right-radius: 1rem;
@@ -611,7 +611,7 @@
     font-size: 1.7rem;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .aside__Title--Text {
     font-size: 1.2rem;
   }
@@ -670,7 +670,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .aside__Steps--Icon {
     font-size: 0.8rem;
   }
@@ -708,7 +708,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer {
     background-color: #1e1e1e;
   }
@@ -760,7 +760,7 @@
   border-radius: 0.8rem;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .article__Image {
     width: 100%;
     display: flex;
@@ -786,7 +786,7 @@
     justify-content: center;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .article__Image--Img {
     height: 8rem;
   }
@@ -804,7 +804,7 @@
   object-fit: cover;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePages__Images {
     display: flex;
     justify-content: center;
@@ -819,7 +819,7 @@
     object-fit: cover;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .articlePages__Images--Img {
     height: 10rem;
   }
@@ -845,7 +845,7 @@
   font-family: "Shrikhand";
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .articlePagesContent__Titre {
     position: relative;
     padding: 1%;
@@ -860,7 +860,7 @@
     font-size: 2rem;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .articlePagesContent__Titre {
     position: relative;
     padding: 1%;
@@ -908,7 +908,7 @@
   transform-origin: center;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .article__IconMenu .far {
     font-size: 2rem;
   }
@@ -919,7 +919,7 @@
     left: -2rem;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .article__IconMenu .far {
     font-size: 1.5rem;
   }
@@ -947,7 +947,7 @@
   text-align: center;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .navigation__Bloc--Title {
     font-size: 1.5rem;
     width: 45%;
@@ -958,7 +958,7 @@
     width: 55%;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .navigation__Bloc--Title {
     font-size: 1rem;
   }
@@ -1002,7 +1002,7 @@ body {
   margin-left: 5%;
 }
 
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__Logo--Title {
     font-size: 2.5rem;
   }
@@ -1020,7 +1020,7 @@ body {
     font-size: 1rem;
   }
 }
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 480px) {
   .header__Logo--Title {
     font-size: 2.5rem;
   }
