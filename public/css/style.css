@@ -417,17 +417,19 @@
 }
 .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
   width: 70%;
-  margin-bottom: -2%;
+  margin-bottom: -3%;
+  font-size: 1.3rem;
 }
 .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
   width: 70%;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
   width: 30%;
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-device-width: 768px) {
@@ -452,7 +454,7 @@
     width: 100%;
   }
   .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
     font-size: 0.8rem;
@@ -479,7 +481,7 @@
     width: 90%;
   }
   .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
-    font-size: 0.5rem;
+    font-size: 0.55rem;
     width: 80%;
     margin-top: 2%;
   }
