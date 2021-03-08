@@ -6,9 +6,10 @@
     &__Head{
         padding-left: 5%;
         &--Titre{
-            border-bottom: 5px solid $tertiary-color;
+            border-bottom: 3px solid $tertiary-color;
             width: 5%;
             font-family: "Roboto", sans-serif;
+            font-weight: normal;
         }
     }
 }
@@ -21,7 +22,7 @@
             background-color: whitesmoke;
             &--Titre{
                 font-size: 1rem;
-                width: 10%;
+                width: 6%;
             }
         }
     }

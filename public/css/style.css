@@ -95,7 +95,7 @@
   font-family: "Roboto", sans-serif;
   cursor: pointer;
   box-shadow: 2px 2px 5px #969696;
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-top: 2%;
   margin-bottom: 5%;
   padding: 2% 4%;
@@ -112,7 +112,7 @@
 
 @media screen and (max-width: 768px) {
   .navigation__Bloc--Button {
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: linear-gradient(#9356DC, #FF79DA);
     transform: scale(1);
     transition: transform 600ms;
@@ -124,7 +124,7 @@
 }
 @media screen and (max-width: 480px) {
   .navigation__Bloc--Button {
-    font-size: 1rem;
+    font-size: 0.6rem;
   }
 }
 .articlePagesContent__Button {
@@ -153,7 +153,7 @@
 
 @media screen and (max-width: 768px) {
   .articlePagesContent__Button--Btn {
-    font-size: 1.5rem;
+    font-size: 1rem;
     background: linear-gradient(#9356DC, #FF79DA);
     transform: scale(1);
     transition: transform 600ms;
@@ -205,7 +205,7 @@
 .article__Icon .far {
   font-size: 2.5rem;
   margin-bottom: 10%;
-  color: #9356DC;
+  color: black;
 }
 .article__Icon .fas {
   font-size: 2.5rem;
@@ -220,7 +220,7 @@
   transform-origin: center;
 }
 .article__Icon:hover .far {
-  transform: scale(1);
+  transform: scale(0);
   transition: transform 400ms;
   transform-origin: center;
 }
@@ -239,7 +239,7 @@
   .article__Icon .far {
     font-size: 2rem;
     margin-bottom: 10%;
-    color: #9356DC;
+    color: black;
   }
   .article__Icon .fas {
     font-size: 2rem;
@@ -254,7 +254,7 @@
     transform-origin: center;
   }
   .article__Icon:hover .far {
-    transform: scale(1);
+    transform: scale(0);
     transition: transform 400ms;
     transform-origin: center;
   }
@@ -273,7 +273,7 @@
   .article__Icon .far {
     font-size: 1.5rem;
     margin-bottom: 10%;
-    color: #9356DC;
+    color: black;
   }
   .article__Icon .fas {
     font-size: 1.5rem;
@@ -288,7 +288,7 @@
     transform-origin: center;
   }
   .article__Icon:hover .far {
-    transform: scale(1);
+    transform: scale(0);
     transition: transform 400ms;
     transform-origin: center;
   }
@@ -296,6 +296,61 @@
     transform: scale(1);
     transition: transform 400ms;
     transform-origin: center;
+  }
+}
+.article__IconMenu {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+}
+.article__IconMenu .far {
+  font-size: 2.5rem;
+  margin-bottom: 10%;
+  color: black;
+}
+.article__IconMenu .fas {
+  font-size: 2.5rem;
+  margin-bottom: 10%;
+  color: #9356DC;
+}
+.article__IconMenu .far + .fas {
+  position: relative;
+  left: -2.5rem;
+  transform: scale(0);
+  cursor: pointer;
+  transform-origin: center;
+}
+.article__IconMenu:hover .far {
+  transform: scale(0);
+  transition: transform 400ms;
+  transform-origin: center;
+}
+.article__IconMenu:hover .far + .fas {
+  transform: scale(1);
+  transition: transform 400ms;
+  transform-origin: center;
+}
+
+@media screen and (max-width: 768px) {
+  .article__IconMenu .far {
+    font-size: 2rem;
+  }
+  .article__IconMenu .fas {
+    font-size: 2rem;
+  }
+  .article__IconMenu .far + .fas {
+    left: -2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .article__IconMenu .far {
+    font-size: 1.5rem;
+  }
+  .article__IconMenu .fas {
+    font-size: 1.5rem;
+  }
+  .article__IconMenu .far + .fas {
+    left: -1.5rem;
   }
 }
 .article__Ecrit {
@@ -406,9 +461,10 @@
   padding-left: 5%;
 }
 .articlePageContent__Head--Titre {
-  border-bottom: 5px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
   width: 5%;
   font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 @media screen and (max-width: 768px) {
@@ -422,7 +478,7 @@
   }
   .articlePageContent__Head--Titre {
     font-size: 1rem;
-    width: 10%;
+    width: 6%;
   }
 
   .articlePages {
@@ -635,6 +691,7 @@
 
 .aside__Steps--Step {
   cursor: pointer;
+  font-family: "Roboto", sans-serif;
   padding: 1.5rem;
   margin: 1rem 0 1rem 0.75rem;
   box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -670,12 +727,17 @@
   font-family: "Roboto", sans-serif;
 }
 
+.aside__Steps--Step:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+  box-shadow: 0 0 10px #9356DC;
+}
+
 @media screen and (max-width: 768px) {
   .aside__Steps--Icon {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
   .aside__Steps--Text {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .footer {
@@ -713,7 +775,7 @@
     background-color: #1e1e1e;
   }
   .footer__Article--Title {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Shrikhand";
     color: white;
     margin-left: 1%;
@@ -875,61 +937,6 @@
     font-size: 1.5rem;
   }
 }
-.article__IconMenu {
-  display: flex;
-  align-items: center;
-  font-size: 3rem;
-}
-.article__IconMenu .far {
-  font-size: 2.5rem;
-  margin-bottom: 10%;
-  color: #9356DC;
-}
-.article__IconMenu .fas {
-  font-size: 2.5rem;
-  margin-bottom: 10%;
-  color: #9356DC;
-}
-.article__IconMenu .far + .fas {
-  position: relative;
-  left: -2.5rem;
-  transform: scale(0);
-  cursor: pointer;
-  transform-origin: center;
-}
-.article__IconMenu:hover .far {
-  transform: scale(1);
-  transition: transform 400ms;
-  transform-origin: center;
-}
-.article__IconMenu:hover .far + .fas {
-  transform: scale(1);
-  transition: transform 400ms;
-  transform-origin: center;
-}
-
-@media screen and (max-width: 768px) {
-  .article__IconMenu .far {
-    font-size: 2rem;
-  }
-  .article__IconMenu .fas {
-    font-size: 2rem;
-  }
-  .article__IconMenu .far + .fas {
-    left: -2rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .article__IconMenu .far {
-    font-size: 1.5rem;
-  }
-  .article__IconMenu .fas {
-    font-size: 1.5rem;
-  }
-  .article__IconMenu .far + .fas {
-    left: -1.5rem;
-  }
-}
 .navigation {
   font-family: "Roboto", sans-serif;
   background-color: whitesmoke;
@@ -971,6 +978,10 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
 }
 
 .header__Logo {

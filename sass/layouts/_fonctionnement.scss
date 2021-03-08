@@ -46,6 +46,7 @@
 .aside__Steps{
     &--Step{
         cursor: pointer;
+        font-family: "Roboto", sans-serif;
         padding: 1.5rem;
         margin: 1rem 0 1rem 0.75rem;
         box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
@@ -81,17 +82,18 @@
         font-family: "Roboto", sans-serif;
     }
 }
+
+.aside__Steps--Step:hover{
+    background-color: rgba($color: $primary-color, $alpha: 0.2);
+    box-shadow: 0 0 10px $primary-color;
+}    
 @media screen and (max-width: 768px){
     .aside__Steps{
-        &--Step{
-            &::before {
-              }
-        }
         &--Icon{
-            font-size: 0.8rem;
+            font-size: 1.1rem;
         }
         &--Text{
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
 }

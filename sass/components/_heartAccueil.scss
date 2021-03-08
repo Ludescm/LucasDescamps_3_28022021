@@ -5,7 +5,7 @@
     & .far {
         font-size: 2.5rem;
         margin-bottom: 10%;
-        color: $primary-color;
+        color: black;
     }
     & .fas{
         font-size: 2.5rem;
@@ -21,7 +21,7 @@
         
     }
     &:hover .far{
-        transform: scale(1);
+        transform: scale(0);
         transition: transform 400ms;
         transform-origin: center;
     }
@@ -41,7 +41,7 @@
         & .far {
             font-size: 2rem;
             margin-bottom: 10%;
-            color: $primary-color;
+            color: black;
         }
         & .fas{
             font-size: 2rem;
@@ -57,7 +57,7 @@
             
         }
         &:hover .far{
-            transform: scale(1);
+            transform: scale(0);
             transition: transform 400ms;
             transform-origin: center;
         }
@@ -78,7 +78,7 @@
         & .far {
             font-size: 1.5rem;
             margin-bottom: 10%;
-            color: $primary-color;
+            color: black;
         }
         & .fas{
             font-size: 1.5rem;
@@ -94,7 +94,7 @@
             
         }
         &:hover .far{
-            transform: scale(1);
+            transform: scale(0);
             transition: transform 400ms;
             transform-origin: center;
         }
