@@ -43,55 +43,53 @@
     display: flex;
     flex-flow: row;
     justify-content: center;
-    animation: roll 4s;
+    animation: roll 3s;
     cursor: pointer;
-    &:hover .articlePagesContent__Entree--Details{
-        transform: scale(1);
+    &:hover .articlePagesContent__Entree--Price{
+        transform: translateX(0%);
     }
     &:hover .articlePagesContent__Entree--Coche{
         transform: scale(1);
     }
-    &:hover .articlePagesContent__Plats--Details{
-        transform: scale(1);
+    &:hover .articlePagesContent__Plats--Price{
+        transform: translateX(0%);
     }
     &:hover .articlePagesContent__Plats--Coche{
         transform: scale(1);
     }
-    &:hover .articlePagesContent__Desserts--Details{
-        transform: scale(1);
+    &:hover .articlePagesContent__Desserts--Price{
+        transform: translateX(0%);
     }
     &:hover .articlePagesContent__Desserts--Coche{
         transform: scale(1);
     }
     &--Details{
-        width: 95%;
+        width: 90%;
         padding-left: 3%;
         font-family: "Roboto";
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        transform-origin: left;
-        transform: scaleX(1.15);
-        transition: transform 600ms;
-        &:hover{
-            transform: scaleX(1);
-        }
     }
     &--Title{
         width: 70%;
         margin-bottom: -3%;
         font-size: 1.3rem;
+        text-overflow: ellipsis;
     }
     &--Text{
-        width: 70%;
+        width: 75%;
         font-size: 1rem;
+        text-overflow: ellipsis;
     }
     &--Price{
-        width: 30%;
+        width: 20%;
         font-weight: bold;
         display: flex;
         justify-content: flex-end;
         font-size: 1.2rem;
+        transform: translateX(102%);
+        transition: transform 600ms;
     }
 }
 
@@ -104,11 +102,6 @@
         border-radius: 1rem;
         &--Details{
             width: 100%;
-            transform: scaleX(1.18);
-            transition: transform 600ms;
-            &:hover{
-            transform: scaleX(1);
-        }
         }
         &--Title{
             margin-bottom: -1%;
@@ -120,6 +113,12 @@
         }
         &--Price{
             font-size: 0.8rem;
+            transform: translateX(122%);
+            transition: transform 600ms;
+            &:hover{
+                transform: translateX(0);
+            }
+            
         }
     }
 }
@@ -132,11 +131,6 @@
         border-radius: 1rem;
         &--Details{
             width: 100%;
-            transform: scaleX(1.26);
-            transition: transform 600ms;
-            &:hover{
-            transform: scaleX(1);
-        }
         }
         &--Title{
             font-size: 0.7rem;

@@ -84,6 +84,7 @@
 }
 
 .aside__Steps--Step:hover{
+    transition: 600ms;
     background-color: rgba($color: $primary-color, $alpha: 0.2);
     box-shadow: 0 0 10px $primary-color;
 }    

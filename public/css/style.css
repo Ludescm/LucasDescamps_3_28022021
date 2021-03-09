@@ -90,6 +90,9 @@
   animation-delay: 0.5s;
 }
 
+.navigation__Bloc {
+  text-decoration: none;
+}
 .navigation__Bloc--Button {
   border: none;
   font-family: "Roboto", sans-serif;
@@ -496,56 +499,54 @@
   display: flex;
   flex-flow: row;
   justify-content: center;
-  animation: roll 4s;
+  animation: roll 3s;
   cursor: pointer;
 }
-.articlePagesContent__Entree:hover .articlePagesContent__Entree--Details, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Details {
-  transform: scale(1);
+.articlePagesContent__Entree:hover .articlePagesContent__Entree--Price, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Price, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Price {
+  transform: translateX(0%);
 }
 .articlePagesContent__Entree:hover .articlePagesContent__Entree--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Entree--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Entree--Coche {
   transform: scale(1);
 }
-.articlePagesContent__Entree:hover .articlePagesContent__Plats--Details, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Details {
-  transform: scale(1);
+.articlePagesContent__Entree:hover .articlePagesContent__Plats--Price, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Price, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Price {
+  transform: translateX(0%);
 }
 .articlePagesContent__Entree:hover .articlePagesContent__Plats--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Plats--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Plats--Coche {
   transform: scale(1);
 }
-.articlePagesContent__Entree:hover .articlePagesContent__Desserts--Details, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Details, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Details {
-  transform: scale(1);
+.articlePagesContent__Entree:hover .articlePagesContent__Desserts--Price, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Price, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Price {
+  transform: translateX(0%);
 }
 .articlePagesContent__Entree:hover .articlePagesContent__Desserts--Coche, .articlePagesContent__Plats:hover .articlePagesContent__Desserts--Coche, .articlePagesContent__Desserts:hover .articlePagesContent__Desserts--Coche {
   transform: scale(1);
 }
 .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
-  width: 95%;
+  width: 90%;
   padding-left: 3%;
   font-family: "Roboto";
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  transform-origin: left;
-  transform: scaleX(1.15);
-  transition: transform 600ms;
-}
-.articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
-  transform: scaleX(1);
 }
 .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
   width: 70%;
   margin-bottom: -3%;
   font-size: 1.3rem;
+  text-overflow: ellipsis;
 }
 .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
-  width: 70%;
+  width: 75%;
   font-size: 1rem;
+  text-overflow: ellipsis;
 }
 .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
-  width: 30%;
+  width: 20%;
   font-weight: bold;
   display: flex;
   justify-content: flex-end;
   font-size: 1.2rem;
+  transform: translateX(102%);
+  transition: transform 600ms;
 }
 
 @media screen and (max-width: 768px) {
@@ -558,11 +559,6 @@
   }
   .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
     width: 100%;
-    transform: scaleX(1.18);
-    transition: transform 600ms;
-  }
-  .articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
-    transform: scaleX(1);
   }
   .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
     margin-bottom: -1%;
@@ -574,6 +570,11 @@
   }
   .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
     font-size: 0.8rem;
+    transform: translateX(122%);
+    transition: transform 600ms;
+  }
+  .articlePagesContent__Entree--Price:hover, .articlePagesContent__Plats--Price:hover, .articlePagesContent__Desserts--Price:hover {
+    transform: translateX(0);
   }
 }
 @media screen and (max-width: 480px) {
@@ -586,11 +587,6 @@
   }
   .articlePagesContent__Entree--Details, .articlePagesContent__Plats--Details, .articlePagesContent__Desserts--Details {
     width: 100%;
-    transform: scaleX(1.26);
-    transition: transform 600ms;
-  }
-  .articlePagesContent__Entree--Details:hover, .articlePagesContent__Plats--Details:hover, .articlePagesContent__Desserts--Details:hover {
-    transform: scaleX(1);
   }
   .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
     font-size: 0.7rem;
@@ -728,6 +724,7 @@
 }
 
 .aside__Steps--Step:hover {
+  transition: 600ms;
   background-color: rgba(147, 86, 220, 0.2);
   box-shadow: 0 0 10px #9356DC;
 }
