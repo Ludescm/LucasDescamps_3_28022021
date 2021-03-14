@@ -76,11 +76,13 @@
         margin-bottom: -3%;
         font-size: 1.3rem;
         text-overflow: ellipsis;
+        overflow: hidden; 
     }
     &--Text{
         width: 75%;
         font-size: 1rem;
         text-overflow: ellipsis;
+        overflow: hidden; 
     }
     &--Price{
         width: 20%;
@@ -133,17 +135,17 @@
             width: 100%;
         }
         &--Title{
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             width: 90%;
             
         }
         &--Text{
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             width: 80%;
             margin-top: 2%;
         }
         &--Price{
-            font-size: 0.6rem;
+            font-size: 0.7rem;
             width: 20%;
         }
     }

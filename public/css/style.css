@@ -533,11 +533,13 @@
   margin-bottom: -3%;
   font-size: 1.3rem;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
   width: 75%;
   font-size: 1rem;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
   width: 20%;
@@ -589,16 +591,16 @@
     width: 100%;
   }
   .articlePagesContent__Entree--Title, .articlePagesContent__Plats--Title, .articlePagesContent__Desserts--Title {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     width: 90%;
   }
   .articlePagesContent__Entree--Text, .articlePagesContent__Plats--Text, .articlePagesContent__Desserts--Text {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     width: 80%;
     margin-top: 2%;
   }
   .articlePagesContent__Entree--Price, .articlePagesContent__Plats--Price, .articlePagesContent__Desserts--Price {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
     width: 20%;
   }
 }
